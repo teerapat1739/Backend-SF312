@@ -18,23 +18,23 @@ module.exports = function (app) {
     // app.post('/signin', requireSignin, user.signin)
 
     
-    // app.get('/users',  requireAuth, user.findAll)
-    // app.post('/users', requireAuth, user.create)
-    // app.get('/users/:id', requireAuth, user.findById)
-    // app.put('/users/:id', requireAuth, user.update)
-    // app.delete('/users/:id', requireAuth, user.delete)
+    // app.get('/api/users',  requireAuth, user.findAll)
+    // app.post('/api/users', requireAuth, user.create)
+    // app.get('/api/users/:id', requireAuth, user.findById)
+    // app.put('/api/users/:id', requireAuth, user.update)
+    // app.delete('/api/users/:id', requireAuth, user.delete)
 
-    //  app.get('/qrcode', qrcode.findAll)
-    //  app.post('/qrcode', qrcode.create)
-    //  app.get('/qrcode/:id', qrcode.findById)
-    //  app.put('/qrcode/:id', qrcode.update)
-    //  app.delete('/qrcode/:id', qrcode.delete)
+     app.get('/api/qrcode', qrcode.findAll)
+     app.post('/api/qrcode', qrcode.create)
+     app.get('/api/qrcode/:id', qrcode.findById)
+     app.put('/api/qrcode/:id', qrcode.update)
+     app.delete('/api/qrcode/:id', qrcode.delete)
 
-    //  app.get('/order', order.findAll)
-    //  app.post('/order', order.create)
-    //  app.get('/order/:id', order.findById)
-    //  app.put('/order/:id', order.update)
-    //  app.delete('/order/:id', order.delete)
+     app.get('/api/order', order.findAll)
+     app.post('/api/order', order.create)
+     app.get('/api/order/:id', order.findById)
+     app.put('/api/order/:id', order.update)
+     app.delete('/api/order/:id', order.delete)
 
    
 }
