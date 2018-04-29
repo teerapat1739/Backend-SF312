@@ -4,7 +4,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')    //เรียกใช้ mongoose
 
-const PORT = 3009
+const PORT = process.env.PORT||3000
 const routes = require('./routes')
 
 
@@ -18,6 +18,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 routes(app)
 
-// app.listen(PORT,  () => {
-//     console.log('ready server on http://localhost:' + PORT)
-// })
+app.listen(PORT,  () => {
+    console.log('ready server on ' + PORT)
+})
