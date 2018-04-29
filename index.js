@@ -14,11 +14,10 @@ const routes = require('./routes')
 // });
 
 
-app.use(cors())
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json({ type: '*/*' }))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 routes(app)
 
-app.listen(PORT,  () => {
-    console.log('ready server on http://localhost:' + PORT)
-})
+// app.listen(PORT,  () => {
+//     console.log('ready server on http://localhost:' + PORT)
+// })
