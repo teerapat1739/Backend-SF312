@@ -6,7 +6,7 @@
 // const requireAuth = passport.authenticate('jwt', { session: false })    //เรียกใช้ JwtStrategy
 
 // const user = require('./controllers/user.controller')
-// const qrcode = require('./controllers/qrcode.controller')
+const qrcode = require('./controllers/qrcode.controller')
 // const order = require('./controllers/order.controller')
 
 module.exports = function (app) {
@@ -30,11 +30,11 @@ module.exports = function (app) {
      app.put('/api/qrcode/:id', qrcode.update)
      app.delete('/api/qrcode/:id', qrcode.delete)
 
-     app.get('/api/order', order.findAll)
-     app.post('/api/order', order.create)
-     app.get('/api/order/:id', order.findById)
-     app.put('/api/order/:id', order.update)
-     app.delete('/api/order/:id', order.delete)
+    //  app.get('/api/order', order.findAll)
+    //  app.post('/api/order', order.create)
+    //  app.get('/api/order/:id', order.findById)
+    //  app.put('/api/order/:id', order.update)
+    //  app.delete('/api/order/:id', order.delete)
 
    
 }
