@@ -23,7 +23,7 @@ SITENAME="sf312-backend"
 # To set up deployment from a local git repository, uncomment the following commands.
 # first, set the username and password (use environment variables!)
 USERNAME="GamePortFolio1712"
-PASSWORD="sf312"
+PASSWORD="sf312-123456"
 az webapp deployment user set --user-name $USERNAME --password $PASSWORD
 
 # now, configure the site for deployment. in this case, we will deploy from the local git repository
