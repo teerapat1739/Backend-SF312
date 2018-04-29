@@ -10,7 +10,7 @@
 // const order = require('./controllers/order.controller')
 
 module.exports = function (app) {
-    app.get('/', function (req, res) {
+    app.get('/api', function (req, res) {
         res.send({ message: 'Service MongoDB' })
     })
 
