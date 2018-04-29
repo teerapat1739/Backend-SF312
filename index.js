@@ -13,7 +13,7 @@ mongoose.connect('mongodb://piya-db:96CXOBxNJXzLxvkbCXvxDWtQHn4XKkXpZ0CSwwXgYU1O
     useMongoClient: true
 });
 
-
+app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 routes(app)
