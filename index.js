@@ -19,6 +19,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json({ type: '*/*' }))
 routes(app)
 
-app.listen(PORT, () => {
+app.listen(PORT,  () => {
     console.log('ready server on http://localhost:' + PORT)
 })
